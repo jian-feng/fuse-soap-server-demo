@@ -36,6 +36,10 @@
 本サンプルでは、[camel-cxfコンポーネント][1]を使って、SOAP Webサービス(Server)の実装方法を示します。Webサービスの開発手法は、Coding-FirstとWSDL-Fisrtの２種類がありますが、
 今回は、素早くWebサービスを提供する目的で、Coding-Firstの手法を採用しました。
 
+> SOAP Clientの実装は、[fuse-soap-client-demo][3]を参照してください。
+
+[3]: https://github.com/jian-feng/fuse-soap-client-demo
+
 また、[camel-cxf][1]のオプションが非常に多いですが、今回は初心者向けのため、最低限の設定のみとなっています。他の詳細なオプションは[リンク先][1]の製品ドキュメントをご参照ください。
 
 [1]: https://access.redhat.com/documentation/en-us/red_hat_fuse/7.5/html/apache_camel_component_reference/cxf-component
@@ -94,8 +98,10 @@ public interface OrderService {
 - Maven Remote Repositoryがアクセスできること
 
 実行手順:
-1. コマンドプロンプトにて実行します。
-   `mvn clean spring-boot:run`
+1. コマンドプロンプトにて実行します。  
+   ```sh
+   mvn clean spring-boot:run
+   ```
 
 2. コマンドプロンプトでWebサービスが公開されることを確認してください。
    ```
